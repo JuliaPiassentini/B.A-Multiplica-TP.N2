@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO-PIASSENTINI M.JULIA</title>
+</head>
+<body>
+    <h1>Formulario de M.Julia Piassentini</h1>
+    <form action="envio.php" method="post" target="_blank">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" size="tamaño" name="nombre" maxlength="10" minlength="4" placeholder="Escribe aquí tu usuario" required>
+        <small>Campo obligatorio</small>
+        <br>
+        <br>
+        <label for="contraseña" >Contraseña</label>
+        <input type="password" id="password" size="tamaño" name="password" maxlength="10" minlength="4" placeholder="Escribe aquí tu contraseña" required>
+        <small>Campo obligatorio</small>
+        <br>
+        <br>
+        <label for="fecha" >Año de nacimiento</label>
+        <input type="date" id="fecha" size="tamaño" name="fecha" max="2023-04-17">
+        <p>Género</p>
+        <label><input type="radio" name="genero" value="F">Femenino</label>
+        <label><input type="radio" name="genero" value="M">Masculino</label>
+        <label><input type="radio" name="genero" value="Otro">Otro</label>
+        <br>
+        <br>
+        <label for="pais">Selecciona tu país de residencia</label>
+        <select name="pais" id="pais">
+            <optgroup label="Centro América">
+                <option value="Panamá">Panamá</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Guatemala">Guatemala</option>
+            </optgroup>
+            <optgroup label="Sud América">
+                <option value="Argentina" selected="selected">Argentina</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Chile">Chile</option>
+                <option value="Brasil">Brasil</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <p>Ocupación actual</p>
+        <label><input type="checkbox" name="ocupacion" value="estudia">Estudia</label>
+        <label><input type="checkbox" name="ocupacion" value="trabaja">Trabaja</label>
+        <label><input type="checkbox" name="ocupacion" value="tareasdecuidado">Tareas de cuidado</label>
+        <label><input type="checkbox" name="ocupacion" value="jubilado">Jubilad@</label>
+        <br>
+        <br>
+        <label for="biografia">Cuéntanos un poco sobre tí</label>
+        <textarea type="file" id="biografia" size="tamaño" name="biografia" placeholder="Escribe una pequeña biografía personal" rows="10" cols="50"></textarea>
+        <br>
+        <br>        
+        <input type="submit" value="Enviar datos"></p>
+        <input type="button" onclick="alert('Sumate a nuestro club de lectura!')" value="Suscribete"> 
+        <input type="reset" value="Restablecer datos">
+    </form>    
+</body>
+</html>
